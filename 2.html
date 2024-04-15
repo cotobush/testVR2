@@ -1,0 +1,16 @@
+<a-scene physics="gravity: -9.8">
+  <!-- カメラの設定 -->
+  <a-entity camera position="0 1.6 0" look-controls>
+    <a-cursor></a-cursor>
+  </a-entity>
+
+  <!-- 手 -->
+  <a-entity id="rightHand" laser-controls="hand: right"></a-entity>
+  <a-entity id="leftHand" laser-controls="hand: left"></a-entity>
+
+  <!-- 球状のボール -->
+  <a-sphere id="ball" radius="0.5" color="#FF0000" dynamic-body grabbable></a-sphere>
+
+  <!-- 床 -->
+  <a-box position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" static-body></a-box>
+</a-scene>
